@@ -1,0 +1,183 @@
+{
+  "uid" : "f5feab4323fb7440",
+  "name" : "goToMainPageByLogoFromProfile",
+  "fullName" : "tests.ProfileTests.goToMainPageByLogoFromProfile",
+  "historyId" : "d3e459bb7ed218f6ca47fb299e8e10ca",
+  "time" : {
+    "start" : 1709818462561,
+    "stop" : 1709818480179,
+    "duration" : 17618
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие страницы входа",
+      "time" : {
+        "start" : 1709818467263,
+        "stop" : 1709818469126,
+        "duration" : 1863
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Авторизация с электронной почтой: parashepa@gmail.com и паролем",
+      "time" : {
+        "start" : 1709818469128,
+        "stop" : 1709818473840,
+        "duration" : 4712
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввод электронной почты: parashepa@gmail.com",
+        "time" : {
+          "start" : 1709818469129,
+          "stop" : 1709818472148,
+          "duration" : 3019
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "parashepa@gmail.com"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввод пароля",
+        "time" : {
+          "start" : 1709818472148,
+          "stop" : 1709818472658,
+          "duration" : 510
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "123456"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Нажатие на кнопку 'Войти'",
+        "time" : {
+          "start" : 1709818472658,
+          "stop" : 1709818473840,
+          "duration" : 1182
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "parashepa@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "123456"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Переход в профиль пользователя",
+      "time" : {
+        "start" : 1709818473840,
+        "stop" : 1709818477110,
+        "duration" : 3270
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Клик по логотипу для перехода на главную страницу",
+      "time" : {
+        "start" : 1709818479273,
+        "stop" : 1709818480070,
+        "duration" : 797
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.ProfileTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "goToMainPageByLogoFromProfile"
+  }, {
+    "name" : "suite",
+    "value" : "tests.ProfileTests"
+  }, {
+    "name" : "host",
+    "value" : "Alexeys-MBP"
+  }, {
+    "name" : "thread",
+    "value" : "82949@Alexeys-MBP.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5feab4323fb7440.json",
+  "parameterValues" : [ ]
+}
