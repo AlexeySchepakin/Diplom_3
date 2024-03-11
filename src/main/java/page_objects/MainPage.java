@@ -77,4 +77,8 @@ public class MainPage {
     public By getFillingHeaderLocator() {
         return fillingHeader;
     }
+
+    public By getBunTab() {
+        return bunTab;
+    }
 }

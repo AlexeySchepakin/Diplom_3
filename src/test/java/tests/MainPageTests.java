@@ -4,6 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import page_objects.MainPage;
@@ -19,7 +20,6 @@ public class MainPageTests {
     public void setUp() {
         String browserName = System.getProperty("browser", "chrome");
         driver = WebDriverFactory.createDriver(browserName);
-
         driver.manage().window().maximize();
         mainPage = new MainPage(driver);
         mainPage.open();
@@ -28,10 +28,13 @@ public class MainPageTests {
     @Test
     public void testBunTabOpens() {
         mainPage.clickSauceTab();
+        WebDriverWait waitClickable = new WebDriverWait(driver, 10);
+        waitClickable.until(ExpectedConditions.elementToBeClickable(mainPage.getBunTab()));
         mainPage.clickBunTab();
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getBunHeaderLocator()));
-        assertTrue("Header under Bun tab is not visible", driver.findElement(mainPage.getBunHeaderLocator()).isDisplayed());
+        WebDriverWait waitVisible = new WebDriverWait(driver, 10);
+        waitVisible.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getBunHeaderLocator()));
+        WebElement bunHeader = driver.findElement(mainPage.getBunHeaderLocator());
+        assertTrue("Bun category is not visible", bunHeader.isDisplayed());
     }
 
     @Test
@@ -39,7 +42,8 @@ public class MainPageTests {
         mainPage.clickSauceTab();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getSauceHeaderLocator()));
-        assertTrue("Header under Sauce tab is not visible", driver.findElement(mainPage.getSauceHeaderLocator()).isDisplayed());
+        WebElement sauceHeader = driver.findElement(mainPage.getSauceHeaderLocator());
+        assertTrue("Sauce category is not visible", sauceHeader.isDisplayed());
     }
 
     @Test
@@ -47,9 +51,9 @@ public class MainPageTests {
         mainPage.clickFillingTab();
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getFillingHeaderLocator()));
-        assertTrue("Header under Filling tab is not visible", driver.findElement(mainPage.getFillingHeaderLocator()).isDisplayed());
+        WebElement fillingHeader = driver.findElement(mainPage.getFillingHeaderLocator());
+        assertTrue("Filling category is not visible", fillingHeader.isDisplayed());
     }
-
 
     @After
     public void tearDown() {
