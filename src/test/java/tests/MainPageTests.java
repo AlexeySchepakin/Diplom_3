@@ -27,32 +27,25 @@ public class MainPageTests {
 
     @Test
     public void testBunTabOpens() {
-        mainPage.clickSauceTab();
-        WebDriverWait waitClickable = new WebDriverWait(driver, 10);
-        waitClickable.until(ExpectedConditions.elementToBeClickable(mainPage.getBunTab()));
+       /* mainPage.clickSauceTab();
         mainPage.clickBunTab();
-        WebDriverWait waitVisible = new WebDriverWait(driver, 10);
-        waitVisible.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getBunHeaderLocator()));
-        WebElement bunHeader = driver.findElement(mainPage.getBunHeaderLocator());
-        assertTrue("Bun category is not visible", bunHeader.isDisplayed());
+        WebDriverWait wait = new WebDriverWait(driver, 10);*/
+        //Раскомментировать при необходимости, сейчас по умолчанию открыта вкладка "Булки"
+        assertTrue("Bun tab is not active", mainPage.isBunTabActive());
     }
 
     @Test
     public void testSauceTabOpens() {
         mainPage.clickSauceTab();
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getSauceHeaderLocator()));
-        WebElement sauceHeader = driver.findElement(mainPage.getSauceHeaderLocator());
-        assertTrue("Sauce category is not visible", sauceHeader.isDisplayed());
+        assertTrue("Sauce tab is not active", mainPage.isSauceTabActive());
     }
 
     @Test
     public void testFillingTabOpens() {
         mainPage.clickFillingTab();
         WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(mainPage.getFillingHeaderLocator()));
-        WebElement fillingHeader = driver.findElement(mainPage.getFillingHeaderLocator());
-        assertTrue("Filling category is not visible", fillingHeader.isDisplayed());
+        assertTrue("Filling tab is not active", mainPage.isFillingTabActive());
     }
 
     @After

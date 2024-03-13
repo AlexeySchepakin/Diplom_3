@@ -13,13 +13,11 @@ public class MainPage {
     private final By loginLink = By.cssSelector("button.button_button__33qZ0.button_button_type_primary__1O7Bx.button_button_size_large__G21Vg");
     private final By profileLink = By.xpath("//a[@href='/account']");
     private final By bunTab = By.xpath("//span[text()='Булки']");
-    By bunHeader = By.xpath("//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Булки']");
-
     private final By sauceTab = By.xpath("//span[text()='Соусы']");
-    By sauceHeader = By.xpath("//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Соусы']");
-
     private final By fillingTab = By.xpath("//span[text()='Начинки']");
-    By fillingHeader = By.xpath("//h2[@class='text text_type_main-medium mb-6 mt-10' and text()='Начинки']");
+    private final By activeBunTab = By.xpath("//div[contains(@class, 'tab_tab_type_current')]/span[text()='Булки']");
+    private final By activeSauceTab = By.xpath("//div[contains(@class, 'tab_tab_type_current')]/span[text()='Соусы']");
+    private final By activeFillingTab = By.xpath("//div[contains(@class, 'tab_tab_type_current')]/span[text()='Начинки']");
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
@@ -66,19 +64,15 @@ public class MainPage {
         tab.click();
     }
 
-    public By getBunHeaderLocator() {
-        return bunHeader;
+    public boolean isBunTabActive() {
+        return driver.findElements(activeBunTab).size() > 0;
     }
 
-    public By getSauceHeaderLocator() {
-        return sauceHeader;
+    public boolean isSauceTabActive() {
+        return driver.findElements(activeSauceTab).size() > 0;
     }
 
-    public By getFillingHeaderLocator() {
-        return fillingHeader;
-    }
-
-    public By getBunTab() {
-        return bunTab;
+    public boolean isFillingTabActive() {
+        return driver.findElements(activeFillingTab).size() > 0;
     }
 }
