@@ -1,0 +1,183 @@
+{
+  "uid" : "57d175cb8f44dc3b",
+  "name" : "testLoginAfterPasswordRecovery",
+  "fullName" : "tests.LoginTests.testLoginAfterPasswordRecovery",
+  "historyId" : "f7b3dee66c4ba08212dbed88893e7f7f",
+  "time" : {
+    "start" : 1709818550473,
+    "stop" : 1709818563813,
+    "duration" : 13340
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открытие страницы восстановления пароля",
+      "time" : {
+        "start" : 1709818555187,
+        "stop" : 1709818557437,
+        "duration" : 2250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Переход на страницу входа через ссылку 'Войти'",
+      "time" : {
+        "start" : 1709818557439,
+        "stop" : 1709818558346,
+        "duration" : 907
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Авторизация с электронной почтой: parashepa@gmail.com и паролем",
+      "time" : {
+        "start" : 1709818558347,
+        "stop" : 1709818561547,
+        "duration" : 3200
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ввод электронной почты: parashepa@gmail.com",
+        "time" : {
+          "start" : 1709818558348,
+          "stop" : 1709818560483,
+          "duration" : 2135
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "email",
+          "value" : "parashepa@gmail.com"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Ввод пароля",
+        "time" : {
+          "start" : 1709818560483,
+          "stop" : 1709818560967,
+          "duration" : 484
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "password",
+          "value" : "123456"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "Нажатие на кнопку 'Войти'",
+        "time" : {
+          "start" : 1709818560967,
+          "stop" : 1709818561547,
+          "duration" : 580
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : false,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "parashepa@gmail.com"
+      }, {
+        "name" : "password",
+        "value" : "123456"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 3,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Проверка успешного входа в систему",
+      "time" : {
+        "start" : 1709818561547,
+        "stop" : 1709818563725,
+        "duration" : 2178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "tests"
+  }, {
+    "name" : "testClass",
+    "value" : "tests.LoginTests"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLoginAfterPasswordRecovery"
+  }, {
+    "name" : "suite",
+    "value" : "tests.LoginTests"
+  }, {
+    "name" : "host",
+    "value" : "Alexeys-MBP"
+  }, {
+    "name" : "thread",
+    "value" : "82949@Alexeys-MBP.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "57d175cb8f44dc3b.json",
+  "parameterValues" : [ ]
+}

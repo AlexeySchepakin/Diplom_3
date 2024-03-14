@@ -1,0 +1,121 @@
+[ {
+  "uid" : "f5feab4323fb7440",
+  "name" : "goToMainPageByLogoFromProfile",
+  "time" : {
+    "start" : 1709818462561,
+    "stop" : 1709818480179,
+    "duration" : 17618
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7dee708dd0df860a",
+  "name" : "testLoginFromRegistrationPage",
+  "time" : {
+    "start" : 1709818527070,
+    "stop" : 1709818537248,
+    "duration" : 10178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6db19c2fcd29b3b6",
+  "name" : "goToProfileFromMainPage",
+  "time" : {
+    "start" : 1709818480214,
+    "stop" : 1709818497161,
+    "duration" : 16947
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1082bc387a7c43a7",
+  "name" : "goToMainPageByButtonFromProfile",
+  "time" : {
+    "start" : 1709818440487,
+    "stop" : 1709818462403,
+    "duration" : 21916
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f295dce50cea83bc",
+  "name" : "testSuccessfulRegistration",
+  "time" : {
+    "start" : 1709818580591,
+    "stop" : 1709818594596,
+    "duration" : 14005
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dac3ac04ddf7f314",
+  "name" : "testLoginFromMainPage",
+  "time" : {
+    "start" : 1709818537257,
+    "stop" : 1709818550467,
+    "duration" : 13210
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fedd3948fb2b1e35",
+  "name" : "testLogout",
+  "time" : {
+    "start" : 1709818563822,
+    "stop" : 1709818580579,
+    "duration" : 16757
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abfa8f30ad0afefa",
+  "name" : "testFillingTabOpens",
+  "time" : {
+    "start" : 1709818497206,
+    "stop" : 1709818508141,
+    "duration" : 10935
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "57d175cb8f44dc3b",
+  "name" : "testLoginAfterPasswordRecovery",
+  "time" : {
+    "start" : 1709818550473,
+    "stop" : 1709818563813,
+    "duration" : 13340
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efbd8f4fb05feed8",
+  "name" : "testRegistrationWithShortPassword",
+  "time" : {
+    "start" : 1709818594602,
+    "stop" : 1709818606501,
+    "duration" : 11899
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8ecd52782c0ab2a6",
+  "name" : "testBunTabOpens",
+  "time" : {
+    "start" : 1709818508149,
+    "stop" : 1709818517972,
+    "duration" : 9823
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7ebc30b16d66a487",
+  "name" : "testSauceTabOpens",
+  "time" : {
+    "start" : 1709818517984,
+    "stop" : 1709818526984,
+    "duration" : 9000
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
